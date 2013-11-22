@@ -1,0 +1,21 @@
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (max-width:768px) {
+	.logo {
+		margin: 0 auto;
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	nav {
+		text-align: center;
+		position: static;
+		float: none;
+		li {
+			float: none;
+		}
+	}
+}
