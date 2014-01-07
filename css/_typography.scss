@@ -30,18 +30,19 @@ a {
 	}
 }
 
-blockquote {
-	font-size: 1.2em;
-	color: $blue;
-	margin: 30px 0;
-	border-top: 1px dotted $grey;
-	border-bottom: 1px dotted $grey;
-	// padding: 20px;
-	// background-color: $tan;
-}
-
 p:first-of-type {
 	font-size: 1.2em;
+}
+
+.row {
+	p:first-of-type {
+		font-size: 1em;
+	}
+}
+
+blockquote {
+	font-size: 1.2em;
+	line-height: 1.8em;
 }
 
 /* nav */

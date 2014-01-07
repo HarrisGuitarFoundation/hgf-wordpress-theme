@@ -31,7 +31,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	background-color: #cacaca;
+	background-color: $grey;
 	padding: 0;
 	margin: 0;
 }
@@ -57,16 +57,20 @@ input:focus {
 	border:1px solid #04A4CC;
 }
 
+blockquote {
+	margin: auto 20px;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
 
 /* wrapper */
 .wrapper {
-	max-width:960px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
+	max-width: 960px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
 	background-color: #fff; 
 }
 /* header */
@@ -76,7 +80,7 @@ input:focus {
 /* logo */
 .logo {
 	float: left;
-	padding: 30px 40px 20px 40px;
+	padding: 60px 40px 60px 60px;
 }
 .logo-img {
 	
@@ -84,9 +88,9 @@ input:focus {
 /* nav */
 nav {
 	position: relative;
-	top: 20px;
+	top: 60px;
 	float: right;
-	right: 20px;
+	right: 40px;
 	li {
 		float: left;
 		padding-right: 20px;
@@ -101,12 +105,39 @@ nav {
 
 .main {
 	background-color: $white;
-	padding: 0 40px;
+
+	// p, h1, h2, h3, h4, h5, blockquote {
+	// 	padding: 0 60px;
+	// }
+	// .ezcol {
+	// 	p, h1, h2, h3, h4, h5, blockquote {
+	// 	padding: 0;
+	// 	}
+	// }
+	ul, ol {
+		padding: 0 80px;
+	}
 	img {
 		padding: 6px;
 		@include box-shadow(0, 0, 6px, $grey, $inset: false);
+		&.no-shadow{
+			@include box-shadow(0, 0, 0, $white, $inset: false);
+		}
+		&.full-width {
+			width: 100%;
+		}
 	}
 }
+
+.row {
+	padding: 40px 60px;
+}
+
+.row.tan-background {
+	background-color: $tan;
+}
+
+
 
 
 /* sidebar */
@@ -115,7 +146,7 @@ nav {
 }
 /* footer */
 .footer {
-	background-color: $tan;
+	background-color: $darkerTan;
 	min-height: 350px;
 	padding: 20px 40px;
 }
