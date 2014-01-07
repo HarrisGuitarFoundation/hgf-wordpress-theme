@@ -21,15 +21,15 @@ a {
   a:hover {
     text-decoration: underline; }
 
-blockquote {
-  font-size: 1.2em;
-  color: #5679a5;
-  margin: 30px 0;
-  border-top: 1px dotted #cacaca;
-  border-bottom: 1px dotted #cacaca; }
-
 p:first-of-type {
   font-size: 1.2em; }
+
+.row p:first-of-type {
+  font-size: 1em; }
+
+blockquote {
+  font-size: 1.2em;
+  line-height: 1.8em; }
 
 /* nav */
 nav {
@@ -71,7 +71,11 @@ html {
   font-size: 62.5%; }
 
 body {
+<<<<<<< HEAD
   background-color: #eae8dd;
+=======
+  background-color: #e2dfd5;
+>>>>>>> 0db3190c3315f1d4ecb06310106cf9807deb5168
   padding: 0;
   margin: 0; }
 
@@ -95,6 +99,9 @@ input:focus {
   outline: 0;
   border: 1px solid #04A4CC; }
 
+blockquote {
+  margin: auto 20px; }
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -113,12 +120,16 @@ input:focus {
 /* logo */
 .logo {
   float: left;
-  padding: 30px 40px 20px 40px; }
+  padding: 60px 40px 60px 60px; }
 
 /* nav */
 nav {
   position: relative;
+<<<<<<< HEAD
   top: 40px;
+=======
+  top: 60px;
+>>>>>>> 0db3190c3315f1d4ecb06310106cf9807deb5168
   float: right;
   right: 40px; }
   nav li {
@@ -130,16 +141,34 @@ nav {
       border-bottom: 2px solid #5679a5; }
 
 .main {
+<<<<<<< HEAD
   background-color: white;
   padding: 0 40px; }
   .main article {
     width: 600px;
     float: left; }
+=======
+  background-color: white; }
+  .main ul, .main ol {
+    padding: 0 80px; }
+>>>>>>> 0db3190c3315f1d4ecb06310106cf9807deb5168
   .main img {
     padding: 6px;
-    -webkit-box-shadow: 0 0 6px #cacaca;
-    -moz-box-shadow: 0 0 6px #cacaca;
-    box-shadow: 0 0 6px #cacaca; }
+    -webkit-box-shadow: 0 0 6px #e2dfd5;
+    -moz-box-shadow: 0 0 6px #e2dfd5;
+    box-shadow: 0 0 6px #e2dfd5; }
+    .main img.no-shadow {
+      -webkit-box-shadow: 0 0 0 white;
+      -moz-box-shadow: 0 0 0 white;
+      box-shadow: 0 0 0 white; }
+    .main img.full-width {
+      width: 100%; }
+
+.row {
+  padding: 40px 60px; }
+
+.row.tan-background {
+  background-color: #f5f3ef; }
 
 .sidebar {
   width: 300px;
@@ -150,7 +179,7 @@ nav {
 /* sidebar */
 /* footer */
 .footer {
-  background-color: #f7f4ed;
+  background-color: #cfbe82;
   min-height: 350px;
   padding: 20px 40px;
   clear: both; }
