@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
   color: #ab371f; }
 
 a {
-  color: #5679a5;
+  color: #904429;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -33,9 +33,9 @@ p:first-of-type {
 
 /* nav */
 nav {
-  font-size: 16px; }
+  font-size: 18px; }
   nav a {
-    color: #5679a5; }
+    color: #904429; }
     nav a:hover {
       text-decoration: none;
       color: #5679a5; }
@@ -71,7 +71,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #cacaca;
+  background-color: #eae8dd;
   padding: 0;
   margin: 0; }
 
@@ -100,13 +100,16 @@ input:focus {
 \*------------------------------------*/
 /* wrapper */
 .wrapper {
-  max-width: 960px;
+  max-width: 1060px;
   width: 95%;
   margin: 0 auto;
   position: relative;
   background-color: #fff; }
 
 /* header */
+.header {
+  padding: 20px 0; }
+
 /* logo */
 .logo {
   float: left;
@@ -115,9 +118,9 @@ input:focus {
 /* nav */
 nav {
   position: relative;
-  top: 20px;
+  top: 40px;
   float: right;
-  right: 20px; }
+  right: 40px; }
   nav li {
     float: left;
     padding-right: 20px; }
@@ -129,18 +132,28 @@ nav {
 .main {
   background-color: white;
   padding: 0 40px; }
+  .main article {
+    width: 600px;
+    float: left; }
   .main img {
     padding: 6px;
     -webkit-box-shadow: 0 0 6px #cacaca;
     -moz-box-shadow: 0 0 6px #cacaca;
     box-shadow: 0 0 6px #cacaca; }
 
+.sidebar {
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+  float: right; }
+
 /* sidebar */
 /* footer */
 .footer {
   background-color: #f7f4ed;
   min-height: 350px;
-  padding: 20px 40px; }
+  padding: 20px 40px;
+  clear: both; }
 
 /*------------------------------------*\
     MISC

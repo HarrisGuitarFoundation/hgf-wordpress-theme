@@ -31,7 +31,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	background-color: #cacaca;
+	background-color: #eae8dd;
 	padding: 0;
 	margin: 0;
 }
@@ -63,7 +63,7 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:960px;
+	max-width:1060px;
 	width:95%;
 	margin:0 auto;
 	position:relative;
@@ -71,7 +71,7 @@ input:focus {
 }
 /* header */
 .header {
-
+	padding: 20px 0;
 }
 /* logo */
 .logo {
@@ -84,9 +84,9 @@ input:focus {
 /* nav */
 nav {
 	position: relative;
-	top: 20px;
+	top: 40px;
 	float: right;
-	right: 20px;
+	right: 40px;
 	li {
 		float: left;
 		padding-right: 20px;
@@ -102,10 +102,21 @@ nav {
 .main {
 	background-color: $white;
 	padding: 0 40px;
+	article {
+		width: 600px;
+		float: left;
+	}
 	img {
 		padding: 6px;
 		@include box-shadow(0, 0, 6px, $grey, $inset: false);
 	}
+}
+
+.sidebar {
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
 }
 
 
@@ -118,6 +129,7 @@ nav {
 	background-color: $tan;
 	min-height: 350px;
 	padding: 20px 40px;
+	clear: both;
 }
 
 
