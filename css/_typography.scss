@@ -10,7 +10,7 @@
 }
 
 body {
-	font:400 14px/1.6 Georgia, Arial, sans-serif;
+	font:400 16px/1.6 Georgia, Arial, sans-serif;
 	color: $black;
 }
 
@@ -30,9 +30,9 @@ a {
 	}
 }
 
-p:first-of-type {
-	font-size: 1.2em;
-}
+// p:first-of-type {
+// 	font-size: 1.2em;
+// }
 
 .row {
 	p:first-of-type {

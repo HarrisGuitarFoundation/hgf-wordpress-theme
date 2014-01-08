@@ -31,7 +31,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	background-color: #eae8dd;
+	background-color: $lightGrey;
 	padding: 0;
 	margin: 0;
 }
@@ -68,13 +68,17 @@ blockquote {
 /* wrapper */
 .wrapper {
 	max-width:1060px;
-	width:95%;
+	width:100%;
 	margin:0 auto;
-	background-color: #fff; 
+	background-color: $lightTan; 
+	@include box-shadow(0, 0, 20px, $darkGrey, $inset: false);
 }
 /* header */
 .header {
+	background-color: $white;
 	padding: 20px 0;
+
+	border-bottom: 5px solid $redBrown;
 }
 /* logo */
 .logo {
@@ -87,7 +91,7 @@ blockquote {
 /* nav */
 nav {
 	position: relative;
-	top: 40px;
+	top: 70px;
 	float: right;
 	right: 40px;
 	li {
@@ -104,17 +108,16 @@ nav {
 
 .main {
 	background-color: $white;
-	padding: 0 40px;
-	article {
-		width: 600px;
-		float: left;
-	}
+	padding: 20px 0 0 0;
+	width: 70%;
+	min-height: 520px;
+	float: left;
 	ul, ol {
 		padding: 0 80px;
 	}
 	img {
-		padding: 6px;
-		@include box-shadow(0, 0, 6px, $grey, $inset: false);
+		padding: 10px 0;
+		// @include box-shadow(0, 0, 6px, $grey, $inset: false);
 		&.no-shadow{
 			@include box-shadow(0, 0, 0, $white, $inset: false);
 		}
@@ -124,15 +127,43 @@ nav {
 	}
 }
 
-.sidebar {
-	width: 300px;
-	margin: 0px;
-	padding: 0px;
-	float: right;
+.page-id-7 { //custom for Collection Grid
+	img {
+		max-width: 200px;
+		max-height: 500px;
+	}
 }
 
+.main.no-sidebar {
+	width: 100%;
+}
+
+.sidebar {
+	width: 30%;
+	margin: 0px;
+	padding: 40px 20px 20px 20px;
+	float: right;
+	// background-color: #fffcd9;
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	p {
+		margin: 0px;
+		&.post-meta-event_date, {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+
 .row {
-	padding: 40px 60px;
+	padding: 60px;
+	&:first-of-type {
+		padding-top: 0px;
+	}
 }
 
 .row.tan-background {

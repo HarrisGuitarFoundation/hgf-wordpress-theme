@@ -1,7 +1,7 @@
-<?php get_header(); ?>
+<?php /* Template Name: No Sidebar */ get_header(); ?>
 	
 	<!-- section -->
-	<section role="main" class="main">
+	<section role="main" class="main no-sidebar">
 		<?php while ( have_posts() ) : the_post(); ?> 
 			<div class="row white-background">
 				<?php the_content(); ?>
@@ -17,10 +17,9 @@
 						<?php the_sub_field("content"); ?>
 					</div>
 	 			<?php endif; ?>
-			<?php endwhile; ?>
+ 			<?php endwhile; ?>
 		<?php endwhile; ?>
 	</section>
-	<?php get_sidebar(); ?>
 	<!-- /section -->
 
 <?php get_footer(); ?>
