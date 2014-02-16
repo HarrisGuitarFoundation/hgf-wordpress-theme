@@ -1,3 +1,8 @@
+callColorbox = function(){
+	$('.colorbox').colorbox();
+}
+
+
 // DOM Ready
 $(function() {
 	
@@ -12,5 +17,12 @@ $(function() {
 			}
 		}
 	}
+
+	
+
+	$.getScript('wp-content/themes/hgf-wordpress-theme/js/jquery.colorbox-min.js', function()
+	{
+	    callColorbox();
+	});
 
 });
