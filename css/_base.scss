@@ -31,7 +31,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	background-color: $lightGrey;
+	background-color: #fcf9f6;
 	padding: 0;
 	margin: 0;
 }
@@ -69,28 +69,26 @@ blockquote {
 .wrapper {
 	max-width:1060px;
 	width:100%;
-	margin:0 auto;
-	background-color: $lightTan; 
-	@include box-shadow(0, 0, 20px, $darkGrey, $inset: false);
+	margin: 10px auto 0 auto;
+	background-color: $white; 
 }
 /* header */
 .header {
-	background-color: $white;
-	padding: 20px 0;
-
-	border-bottom: 5px solid $redBrown;
+	background-color: $red;
+	padding: 80px 40px 80px 60px;
 }
+
 /* logo */
 .logo {
 	float: left;
-	padding: 60px 40px 60px 60px;
-}
-.logo-img {
 	
 }
+.logo-img {
+	width: 300px;
+}
+
 /* nav */
 nav {
-	position: relative;
 	top: 70px;
 	float: right;
 	right: 40px;
@@ -98,12 +96,6 @@ nav {
 		float: left;
 		padding-right: 20px;
 	}
-	a {
-		padding-bottom: 4px;
-		&:hover {
-			border-bottom: 2px solid $blue;
-		}
-	}	
 }
 
 .main {
@@ -127,7 +119,7 @@ nav {
 	}
 }
 
-.page-id-7 { //custom for Collection Grid
+.page-id-7 .main { //custom for Collection Grid
 	img {
 		max-width: 200px;
 		max-height: 500px;
@@ -167,13 +159,13 @@ nav {
 }
 
 .row.tan-background {
-	background-color: $tan;
+	background-color: $lightTan;
 }
 
 
 /* footer */
 .footer {
-	background-color: $darkerTan;
+	background-color: #f1f0d3;
 	min-height: 350px;
 	padding: 20px 40px;
 	clear: both;
