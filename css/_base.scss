@@ -31,7 +31,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	background-color: #fcf9f6;
+	// background-color: #fcf9f6;
 	padding: 0;
 	margin: 0;
 }
@@ -74,13 +74,17 @@ blockquote {
 }
 /* header */
 .header {
-	background-color: $red;
-	padding: 80px 40px 80px 60px;
+	// background-color: $red;
+	background: url("img/wiggle.svg") transparent no-repeat;
+	padding: 45px 40px 20px 60px;
+	height: 180px;
+	margin: 40px 0 0px 0;
 }
 
 /* logo */
 .logo {
 	float: left;
+	width: 250px;
 	
 }
 .logo-img {
@@ -89,9 +93,9 @@ blockquote {
 
 /* nav */
 nav {
-	top: 70px;
+	padding-top: 10px;
+	padding-right: 60px;
 	float: right;
-	right: 40px;
 	li {
 		float: left;
 		padding-right: 20px;
@@ -119,13 +123,6 @@ nav {
 	}
 }
 
-.page-id-7 .main { //custom for Collection Grid
-	img {
-		max-width: 200px;
-		max-height: 500px;
-	}
-}
-
 .main.no-sidebar {
 	width: 100%;
 }
@@ -148,11 +145,8 @@ nav {
 	}
 }
 
-
-
-
 .row {
-	padding: 60px;
+	padding: 60px 20px;
 	&:first-of-type {
 		padding-top: 0px;
 	}
@@ -160,14 +154,15 @@ nav {
 
 .row.tan-background {
 	background-color: $lightTan;
+	padding: 60px;
 }
 
 
 /* footer */
 .footer {
-	background-color: #f1f0d3;
-	min-height: 350px;
-	padding: 20px 40px;
+	background-color: #777663;
+	min-height: 300px;
+	padding: 60px 40px;
 	clear: both;
 }
 
@@ -235,7 +230,6 @@ a img.aligncenter {
 }
 .wp-caption {
 	background:#FFF;
-	border:1px solid #F0F0F0;
 	max-width:96%;
 	padding:5px 3px 10px;
 	text-align:center;
@@ -259,10 +253,11 @@ a img.aligncenter {
 }
 .wp-caption .wp-caption-text,
 .gallery-caption {
+	color: $darkGrey;
 	font-size:11px;
 	line-height:17px;
 	margin:0;
-	padding:0 4px 5px;
+	padding:20px 0;
 }
 .sticky {
 	

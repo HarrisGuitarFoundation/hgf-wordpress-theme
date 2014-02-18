@@ -1,13 +1,11 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-				
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date("Y"); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?> 
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-				
+				<ul>
+					<li>Harris Guitar Foundation</li>
+					<li>510-123-4564</li>
+					<li>P.O. Box 987654</li>
+					<li>harrisguitar @ gmail.com</li>
+				</ul>
 			</footer>
 			<!-- /footer -->
 		
