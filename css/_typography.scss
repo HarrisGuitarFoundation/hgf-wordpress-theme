@@ -27,7 +27,7 @@ a {
 
 .row {
 	p:first-of-type {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 }
 
@@ -43,6 +43,8 @@ nav {
 		color: $white;
 		&:hover {
 			text-decoration: none;
+			padding-bottom: 6px;
+			border-bottom: 1px solid #fffed0;
 			color: #fffed0;
 		}
 	}	

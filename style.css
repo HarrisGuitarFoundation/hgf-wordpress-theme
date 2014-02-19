@@ -16,7 +16,7 @@ a {
     text-decoration: underline; }
 
 .row p:first-of-type {
-  font-size: 1em; }
+  font-size: 1.2em; }
 
 blockquote {
   font-size: 1.2em;
@@ -29,6 +29,8 @@ nav {
     color: white; }
     nav a:hover {
       text-decoration: none;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #fffed0;
       color: #fffed0; }
 
 /*
@@ -103,7 +105,7 @@ blockquote {
   background: url("img/wiggle.svg") transparent no-repeat;
   padding: 45px 40px 20px 60px;
   height: 180px;
-  margin: 40px 0 0px 0; }
+  margin: 40px 0 30px 0; }
 
 /* logo */
 .logo {
@@ -161,12 +163,12 @@ nav {
     padding-top: 0px; }
 
 .row.tan-background {
-  background-color: #ffffde;
+  background-color: #fdfcef;
   padding: 60px; }
 
 /* footer */
 .footer {
-  background-color: #777663;
+  background-color: #d1c974;
   min-height: 300px;
   padding: 60px 40px;
   clear: both; }
@@ -229,7 +231,6 @@ a img.aligncenter {
   margin-right: auto; }
 
 .wp-caption {
-  background: #FFF;
   max-width: 96%;
   padding: 5px 3px 10px;
   text-align: center; }
