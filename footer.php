@@ -1,10 +1,10 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 				<ul>
-					<li>Harris Guitar Foundation</li>
-					<li>510-123-4564</li>
-					<li>P.O. Box 987654</li>
-					<li>harrisguitar @ gmail.com</li>
+					<li><h4>Contact the HGF</h4></li>
+					<li><strong>Phone:</strong> 510-123-4564</li>
+					<li><strong>Address:</strong> P.O. Box 987654</li>
+					<li><strong>Email:</strong> harrisguitar @ gmail.com</li>
 				</ul>
 			</footer>
 			<!-- /footer -->

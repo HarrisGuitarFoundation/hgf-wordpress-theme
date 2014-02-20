@@ -90,6 +90,17 @@ input:focus {
 blockquote {
   margin: auto 20px; }
 
+ul, ol {
+  padding: 0 0px;
+  list-style-type: none; }
+
+.button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  background-color: #f00; }
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -105,7 +116,7 @@ blockquote {
   background: url("img/wiggle.svg") transparent no-repeat;
   padding: 45px 40px 20px 60px;
   height: 180px;
-  margin: 40px 0 30px 0; }
+  margin: 40px 0 20px 0; }
 
 /* logo */
 .logo {
@@ -130,14 +141,8 @@ nav {
   width: 70%;
   min-height: 520px;
   float: left; }
-  .main ul, .main ol {
-    padding: 0 80px; }
   .main img {
     padding: 10px 0; }
-    .main img.no-shadow {
-      -webkit-box-shadow: 0 0 0 white;
-      -moz-box-shadow: 0 0 0 white;
-      box-shadow: 0 0 0 white; }
     .main img.full-width {
       width: 100%; }
 
@@ -161,6 +166,10 @@ nav {
   padding: 60px 20px; }
   .row:first-of-type {
     padding-top: 0px; }
+  .row.breadcrumbs {
+    padding: 0 0 20px 0;
+    margin: 0 20px 15px 20px;
+    border-bottom: 1px solid #871719; }
 
 .row.tan-background {
   background-color: #fdfcef;
@@ -169,7 +178,6 @@ nav {
 /* footer */
 .footer {
   background-color: #d1c974;
-  min-height: 300px;
   padding: 60px 40px;
   clear: both; }
 

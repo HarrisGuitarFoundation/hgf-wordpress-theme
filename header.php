@@ -53,6 +53,15 @@
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
-			
+				
 			</header>
 			<!-- /header -->
+			<?php if(!is_front_page()): ?>
+				<div class="breadcrumbs row no-vertical-padding">
+				    <?php if(function_exists('bcn_display'))
+				    {
+				        bcn_display();
+				    }?>
+				</div>
+			<?php endif; ?>
+	 			
