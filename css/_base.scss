@@ -68,8 +68,12 @@ ul, ol {
 
 .button {
   @include border-radius(5px);
-  background-color: #f00;
+  background-color: #e6e2bd;
+  border: 0px;
+  width: auto;
 }
+
+
 
 
 /*------------------------------------*\
@@ -86,9 +90,10 @@ ul, ol {
 /* header */
 .header {
 	// background-color: $red;
-	background: url("img/wiggle.svg") transparent no-repeat;
+	background: url("img/wiggle.png") transparent no-repeat;
 	padding: 45px 40px 20px 60px;
 	height: 180px;
+	width: 1060px;
 	margin: 40px 0 20px 0;
 }
 
@@ -120,7 +125,6 @@ nav {
 	min-height: 520px;
 	float: left;
 	img {
-		padding: 10px 0;
 		&.full-width {
 			width: 100%;
 		}
@@ -129,6 +133,7 @@ nav {
 
 .main.no-sidebar {
 	width: 100%;
+
 }
 
 .sidebar {
@@ -161,10 +166,35 @@ nav {
 	}
 }
 
+.after-tan {
+	&:after{
+		@include horizontal-pattern;
+	}
+}
+
 .row.tan-background {
 	background-color: $lightTan;
 	padding: 60px;
 }
+
+article {
+	margin: 30px 0;
+	padding: 20px 0;
+	@extend .clear;
+	border-bottom: 1px solid $grey;
+}
+
+.post-thumbnail {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#mc_signup_submit {
+	width: 100px;
+}
+
+
 
 
 /* footer */

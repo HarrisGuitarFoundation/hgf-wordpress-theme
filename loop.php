@@ -7,11 +7,14 @@ query_posts($query_string . "&order=ASC");} ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 		<!-- post thumbnail -->
-		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-			</a>
-		<?php endif; ?>
+		<?php
+		 if ( has_post_thumbnail()) {
+		   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+		   echo '<a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" class="colorbox post-thumbnail">';
+		   the_post_thumbnail('thumbnail');
+		   echo '</a>';
+		 }
+		 ?>
 		<!-- /post thumbnail -->
 		
 		<!-- post title -->
@@ -36,3 +39,4 @@ query_posts($query_string . "&order=ASC");} ?>
 	<!-- /article -->
 
 <?php endif; ?>
+

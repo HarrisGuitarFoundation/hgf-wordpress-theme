@@ -25,6 +25,11 @@ blockquote {
   font-size: 1.2em;
   line-height: 1.8em; }
 
+article p:first-of-type {
+  font-size: 1em; }
+article h2 {
+  margin-top: 0px; }
+
 /* nav */
 nav {
   font-size: 18px; }
@@ -71,15 +76,16 @@ body {
   margin: 0; }
 
 /* clear */
-.clear:before,
-.clear:after {
+.clear:before, article:before,
+.clear:after,
+article:after {
   content: ' ';
   display: table; }
 
-.clear:after {
+.clear:after, article:after {
   clear: both; }
 
-.clear {
+.clear, article {
   *zoom: 1; }
 
 img {
@@ -102,7 +108,9 @@ ul, ol {
   border-radius: 5px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  background-color: #f00; }
+  background-color: #e6e2bd;
+  border: 0px;
+  width: auto; }
 
 /*------------------------------------*\
     STRUCTURE
@@ -116,9 +124,10 @@ ul, ol {
 
 /* header */
 .header {
-  background: url("img/wiggle.svg") transparent no-repeat;
+  background: url("img/wiggle.png") transparent no-repeat;
   padding: 45px 40px 20px 60px;
   height: 180px;
+  width: 1060px;
   margin: 40px 0 20px 0; }
 
 /* logo */
@@ -144,10 +153,8 @@ nav {
   width: 70%;
   min-height: 520px;
   float: left; }
-  .main img {
-    padding: 10px 0; }
-    .main img.full-width {
-      width: 100%; }
+  .main img.full-width {
+    width: 100%; }
 
 .main.no-sidebar {
   width: 100%; }
@@ -174,9 +181,29 @@ nav {
     margin: 0 20px 15px 20px;
     border-bottom: 1px solid #871719; }
 
+.after-tan:after {
+  content: '';
+  display: block;
+  height: 30px;
+  width: 100%;
+  background: url("img/horizontal-pattern.jpg") repeat-x; }
+
 .row.tan-background {
   background-color: #fdfcef;
   padding: 60px; }
+
+article {
+  margin: 30px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2dfd5; }
+
+.post-thumbnail {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+#mc_signup_submit {
+  width: 100px; }
 
 /* footer */
 .footer {

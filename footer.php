@@ -1,5 +1,6 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
+
 				<ul>
 					<li><h4>Contact the HGF</h4></li>
 					<li><strong>Phone:</strong> 510-123-4564</li>

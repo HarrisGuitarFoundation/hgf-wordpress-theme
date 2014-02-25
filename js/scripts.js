@@ -2,6 +2,10 @@ callColorbox = function(){
 	$('.colorbox').colorbox();
 }
 
+addPatternAfterTan = function(){
+	$('.tan-background').after('<div class="after-tan"></div>');
+}
+
 
 // DOM Ready
 $(function() {
@@ -23,6 +27,7 @@ $(function() {
 	$.getScript('wp-content/themes/hgf-wordpress-theme/js/jquery.colorbox-min.js', function()
 	{
 	    callColorbox();
+	    addPatternAfterTan();
 	});
 
 });

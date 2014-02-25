@@ -43,6 +43,15 @@ blockquote {
 	line-height: 1.8em;
 }
 
+article {
+	p:first-of-type {
+		font-size: 1em;
+	}
+	h2 {
+		margin-top: 0px;
+	}
+}
+
 /* nav */
 nav {
 	font-size: 18px;
