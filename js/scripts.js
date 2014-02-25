@@ -4,6 +4,7 @@ callColorbox = function(){
 
 addPatternAfterTan = function(){
 	$('.tan-background').after('<div class="after-tan"></div>');
+	$('.homepage-hero').after('<div class="after-tan"></div>');
 }
 
 

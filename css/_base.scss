@@ -50,6 +50,7 @@ body {
 }
 img {
 	max-width:100%;
+	height: auto;
 	vertical-align:bottom;
 }
 input:focus {
@@ -70,6 +71,7 @@ ul, ol {
   @include border-radius(5px);
   background-color: #e6e2bd;
   border: 0px;
+  padding: 6px 12px;
   width: auto;
 }
 
@@ -94,6 +96,7 @@ ul, ol {
 	padding: 45px 40px 20px 60px;
 	height: 180px;
 	width: 1060px;
+	max-width: 100%;
 	margin: 40px 0 20px 0;
 }
 
@@ -192,6 +195,11 @@ article {
 
 #mc_signup_submit {
 	width: 100px;
+}
+
+div img.homepage-hero {
+	margin: 0;
+	padding: 0;
 }
 
 

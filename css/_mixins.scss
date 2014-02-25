@@ -7,7 +7,7 @@
 @mixin horizontal-pattern {
 	content: '';
 	display: block;
-	height: 30px;
+	height: 40px;
 	width: 100%;
 	background: url("img/horizontal-pattern.jpg") repeat-x;
 }

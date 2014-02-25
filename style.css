@@ -7,10 +7,10 @@ nav, h1, h2, h3, h4, h5 {
   font-family: lato, sans-serif; }
 
 h1, h2, h3, h4, h5 {
-  color: black; }
+  color: #5b5512; }
 
 a {
-  color: #c84b1d;
+  color: #871719;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -90,6 +90,7 @@ article:after {
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: bottom; }
 
 input:focus {
@@ -110,6 +111,7 @@ ul, ol {
   /* stops bg color from leaking outside the border: */
   background-color: #e6e2bd;
   border: 0px;
+  padding: 6px 12px;
   width: auto; }
 
 /*------------------------------------*\
@@ -128,6 +130,7 @@ ul, ol {
   padding: 45px 40px 20px 60px;
   height: 180px;
   width: 1060px;
+  max-width: 100%;
   margin: 40px 0 20px 0; }
 
 /* logo */
@@ -184,7 +187,7 @@ nav {
 .after-tan:after {
   content: '';
   display: block;
-  height: 30px;
+  height: 40px;
   width: 100%;
   background: url("img/horizontal-pattern.jpg") repeat-x; }
 
@@ -204,6 +207,10 @@ article {
 
 #mc_signup_submit {
   width: 100px; }
+
+div img.homepage-hero {
+  margin: 0;
+  padding: 0; }
 
 /* footer */
 .footer {
@@ -360,6 +367,10 @@ a img.aligncenter {
     nav li {
       float: left; } }
 @media only screen and (max-width: 768px) {
+  .header {
+    height: auto;
+    background-color: #871719; }
+
   .logo {
     margin: 0 auto;
     display: block;
@@ -367,9 +378,14 @@ a img.aligncenter {
     text-align: center; }
 
   nav {
+    width: 100%;
+    background-color: #871719;
     text-align: center;
     position: static;
-    float: none; }
+    float: none;
+    padding: 10px 0 0 0; }
+    nav ul {
+      margin: 10px; }
     nav li {
       float: none; }
 

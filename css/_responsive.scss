@@ -18,6 +18,10 @@
 
 
 @media only screen and (max-width:768px) {
+	.header {
+		height: auto;
+		background-color: $red;
+	}
 	.logo {
 		margin: 0 auto;
 		display: block;
@@ -25,9 +29,16 @@
 		text-align: center;
 	}
 	nav {
+		width: 100%;
+		background-color: $red;
 		text-align: center;
 		position: static;
 		float: none;
+		padding: 10px 0 0 0;
+		ul {
+			margin: 10px;
+
+		}
 		li {
 			float: none;
 		}
