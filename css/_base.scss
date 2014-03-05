@@ -69,10 +69,22 @@ ul, ol {
 
 .button {
   @include border-radius(5px);
-  background-color: #e6e2bd;
+  background-color: #871719;
   border: 0px;
-  padding: 6px 12px;
+  padding: 10px 12px;
   width: auto;
+  float: left;
+  color: #fff;
+  margin-top:4px;
+
+  &:hover {
+  	background-color: #e33b0d;
+  	color: #000;
+  }
+}
+
+a.button {
+	text-decoration: none;
 }
 
 
@@ -111,7 +123,7 @@ ul, ol {
 }
 
 /* nav */
-nav {
+header nav {
 	padding-top: 10px;
 	padding-right: 60px;
 	float: right;
@@ -163,9 +175,9 @@ nav {
 		padding-top: 0px;
 	}
 	&.breadcrumbs {
-		padding: 0 0 20px 0;
-		margin: 0 20px 15px 20px;
-		border-bottom: 1px solid #871719;
+		padding: 5px;
+		// margin: 0 20px 15px 20px;
+		background-color: #fdfcef;
 	}
 }
 
@@ -184,7 +196,6 @@ article {
 	margin: 30px 0;
 	padding: 20px 0;
 	@extend .clear;
-	border-bottom: 1px solid $grey;
 }
 
 .post-thumbnail {
@@ -193,9 +204,59 @@ article {
 	margin-bottom: 20px;
 }
 
-#mc_signup_submit {
-	width: 100px;
+.collection-grid-item {
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin: 1.5%;
 }
+
+.single-post-nav {
+	margin: 30px 0px;
+	min-height: 50px;
+	width: 100%;
+}
+
+
+.previous-link {
+	float: left;
+	padding-left: 20px;
+	color: $red;
+	.previous-link-title {
+		display: block;
+		height: 1em;
+		font-size: .9em;
+		color: #474741;
+		margin-bottom: 10px;
+	}
+	a {
+		color: $red;
+		&:hover {
+			color: #474741;
+		}
+	}
+}
+
+.next-link {
+	float: right;
+	padding-right: 20px;
+	color: $red;
+	.next-link-title {
+		display: block;
+		height: 1em;
+		font-size: .9em;
+		color: #474741;
+		margin-bottom: 10px;
+	}
+	a {
+		color: $red;
+		&:hover {
+			color: #474741;
+		}
+	}
+}
+
+
 
 div img.homepage-hero {
 	margin: 0;
@@ -203,13 +264,47 @@ div img.homepage-hero {
 }
 
 
-
-
 /* footer */
 .footer {
-	background-color: #d1c974;
+	background-color: #fff9ab;
 	padding: 60px 40px;
 	clear: both;
+}
+
+// forms
+
+#mc_signup_form {
+	width: 100%;
+	background-color: #fdfcef;
+	padding: 10px;
+	display: inline-block;
+	.mc_var_label {
+		padding: 0px;
+		margin: 0px;
+	}
+	#mc_signup_submit {
+		max-width: 100px;
+	}
+}
+
+
+
+input, textarea {
+	width: 80%;
+	border: 1px solid #000;
+}
+
+input {
+	
+	height: 30px;
+	padding: 2px 4px;
+}
+
+
+
+
+.wpcf7-submit {
+	@extend .button;
 }
 
 

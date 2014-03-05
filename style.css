@@ -3,23 +3,28 @@ body {
   font: 400 16px/1.6 Georgia, Arial, sans-serif;
   color: black; }
 
-nav, h1, h2, h3, h4, h5 {
+nav, h1, h2, h3, h4, h5, label {
   font-family: lato, sans-serif; }
 
 h1, h2, h3, h4, h5 {
-  color: #5b5512; }
+  color: #474741; }
 
 a {
   color: #871719;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #474741; }
 
 .row p:first-of-type {
   font-size: 1.2em; }
 
 .page-id-143 p:first-of-type {
   font-size: 1em; }
+
+.button, .wpcf7-submit {
+  font-family: lato, sans-serif;
+  line-height: 1em; }
 
 blockquote {
   font-size: 1.2em;
@@ -104,15 +109,24 @@ ul, ol {
   padding: 0 0px;
   list-style-type: none; }
 
-.button {
+.button, .wpcf7-submit {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  background-color: #e6e2bd;
+  background-color: #871719;
   border: 0px;
-  padding: 6px 12px;
-  width: auto; }
+  padding: 10px 12px;
+  width: auto;
+  float: left;
+  color: #fff;
+  margin-top: 4px; }
+  .button:hover, .wpcf7-submit:hover {
+    background-color: #e33b0d;
+    color: #000; }
+
+a.button, a.wpcf7-submit {
+  text-decoration: none; }
 
 /*------------------------------------*\
     STRUCTURE
@@ -142,11 +156,11 @@ ul, ol {
   width: 300px; }
 
 /* nav */
-nav {
+header nav {
   padding-top: 10px;
   padding-right: 60px;
   float: right; }
-  nav li {
+  header nav li {
     float: left;
     padding-right: 20px; }
 
@@ -180,16 +194,15 @@ nav {
   .row:first-of-type {
     padding-top: 0px; }
   .row.breadcrumbs {
-    padding: 0 0 20px 0;
-    margin: 0 20px 15px 20px;
-    border-bottom: 1px solid #871719; }
+    padding: 5px;
+    background-color: #fdfcef; }
 
 .after-tan:after {
   content: '';
   display: block;
-  height: 40px;
+  height: 17px;
   width: 100%;
-  background: url("img/horizontal-pattern.jpg") repeat-x; }
+  background: url("img/horizontal-pattern.png") repeat-x; }
 
 .row.tan-background {
   background-color: #fdfcef;
@@ -197,16 +210,53 @@ nav {
 
 article {
   margin: 30px 0;
-  padding: 20px 0;
-  border-bottom: 1px solid #e2dfd5; }
+  padding: 20px 0; }
 
 .post-thumbnail {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px; }
 
-#mc_signup_submit {
-  width: 100px; }
+.collection-grid-item {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin: 1.5%; }
+
+.single-post-nav {
+  margin: 30px 0px;
+  min-height: 50px;
+  width: 100%; }
+
+.previous-link {
+  float: left;
+  padding-left: 20px;
+  color: #871719; }
+  .previous-link .previous-link-title {
+    display: block;
+    height: 1em;
+    font-size: .9em;
+    color: #474741;
+    margin-bottom: 10px; }
+  .previous-link a {
+    color: #871719; }
+    .previous-link a:hover {
+      color: #474741; }
+
+.next-link {
+  float: right;
+  padding-right: 20px;
+  color: #871719; }
+  .next-link .next-link-title {
+    display: block;
+    height: 1em;
+    font-size: .9em;
+    color: #474741;
+    margin-bottom: 10px; }
+  .next-link a {
+    color: #871719; }
+    .next-link a:hover {
+      color: #474741; }
 
 div img.homepage-hero {
   margin: 0;
@@ -214,9 +264,28 @@ div img.homepage-hero {
 
 /* footer */
 .footer {
-  background-color: #d1c974;
+  background-color: #fff9ab;
   padding: 60px 40px;
   clear: both; }
+
+#mc_signup_form {
+  width: 100%;
+  background-color: #fdfcef;
+  padding: 10px;
+  display: inline-block; }
+  #mc_signup_form .mc_var_label {
+    padding: 0px;
+    margin: 0px; }
+  #mc_signup_form #mc_signup_submit {
+    max-width: 100px; }
+
+input, textarea {
+  width: 80%;
+  border: 1px solid #000; }
+
+input {
+  height: 30px;
+  padding: 2px 4px; }
 
 /*------------------------------------*\
     MISC

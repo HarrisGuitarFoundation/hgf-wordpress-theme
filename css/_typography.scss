@@ -5,12 +5,12 @@ body {
 	color: $black;
 }
 
-nav, h1, h2, h3, h4, h5 {
+nav, h1, h2, h3, h4, h5, label {
 	font-family: lato, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-	color: #5b5512;
+	color: #474741;
 }
 
 
@@ -19,8 +19,10 @@ a {
 	text-decoration:none;
 	&:hover {
 		text-decoration: underline;
+		color: #474741;
 	}
 }
+
 
 // p:first-of-type {
 // 	font-size: 1.2em;
@@ -37,6 +39,11 @@ a {
 	p:first-of-type {
 		font-size: 1em;
 	}
+}
+
+.button {
+	font-family: lato, sans-serif;
+	line-height: 1em;
 }
 
 blockquote {

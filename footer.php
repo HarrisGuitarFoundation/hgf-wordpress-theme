@@ -2,7 +2,7 @@
 			<footer class="footer" role="contentinfo">
 
 				<ul>
-					<li><h4>Contact the HGF</h4></li>
+					<li><h3>Contact the HGF</h3></li>
 					<li><strong>Phone:</strong> 510-123-4564</li>
 					<li><strong>Address:</strong> P.O. Box 987654</li>
 					<li><strong>Email:</strong> harrisguitar @ gmail.com</li>
