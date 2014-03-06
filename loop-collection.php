@@ -1,6 +1,6 @@
-<?php if (is_category(3)){
-query_posts($query_string . "&order=ASC");} ?>
+<?php //if (is_category(4)){query_posts($query_string . "&order=ASC");} ?>
 
+<?php query_posts("cat=4"); ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<span class="collection-grid-item">
