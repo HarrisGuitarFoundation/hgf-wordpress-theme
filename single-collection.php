@@ -3,8 +3,6 @@
 	<!-- section -->
 	<section role="main" class="main no-sidebar">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
 				<?php the_content(); // Dynamic Content ?>

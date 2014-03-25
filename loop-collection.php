@@ -1,6 +1,7 @@
 <?php //if (is_category(4)){query_posts($query_string . "&order=ASC");} ?>
 
-<?php query_posts("cat=4"); ?>
+
+<?php query_posts("cat=4&meta_key=guitar-year&orderby=guitar-year&order=ASC"); ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<span class="collection-grid-item">
