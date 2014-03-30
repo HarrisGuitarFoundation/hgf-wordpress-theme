@@ -3,8 +3,7 @@ callColorbox = function(){
 }
 
 addPatternAfterTan = function(){
-	$('.tan-background').after('<div class="after-tan"></div>');
-	$('.homepage-hero').after('<div class="after-tan"></div>');
+	$('.collection-content .ezcol-two-third p:last-of-type').after('<span class="single-close-up">Click on images for close up.</span>');
 }
 
 

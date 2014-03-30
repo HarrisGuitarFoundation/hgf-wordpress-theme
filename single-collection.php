@@ -4,8 +4,9 @@
 	<section role="main" class="main no-sidebar">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
+			<article class="collection-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
 				<?php the_content(); // Dynamic Content ?>
+
 			</article>
 			<!-- /article -->
 		<?php endwhile; ?>
@@ -16,7 +17,6 @@
 			</article>
 			<!-- /article -->
 		<?php endif; ?>
-
 		<?php while(has_sub_field("additional-content")): ?>
 			<?php if(get_row_layout() == "tan-background"): // layout: Content ?>
 					<div class="row tan-background">

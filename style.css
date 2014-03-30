@@ -20,22 +20,20 @@ a {
     text-decoration: underline;
     color: #474741; }
 
-.row p:first-of-type {
-  font-size: 1.4em; }
-
 .page-id-143 p:first-of-type {
   font-size: 1em; }
 
 .button, .wpcf7-submit {
-  font-family: 'open sans', sans-serif;
-  line-height: 1em; }
+  font-family: helvetica, sans-serif;
+  line-height: 1em;
+  color: #fdfcef; }
 
 .wp-caption {
-  font-family: 'open sans', sans-serif;
+  font-family: helvetica, sans-serif;
   font-size: .8em; }
 
 .breadcrumbs {
-  font-family: 'open sans', sans-serif;
+  font-family: helvetica, sans-serif;
   font-size: .9em; }
 
 blockquote {
@@ -55,8 +53,17 @@ nav {
     nav a:hover {
       text-decoration: none;
       padding-bottom: 6px;
-      border-bottom: 1px solid #fffed0;
+      border-bottom: 3px solid #fffed0;
       color: #fffed0; }
+
+.single-close-up {
+  color: #f00; }
+
+.current-menu-item a {
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #fffed0;
+  color: #fffed0; }
 
 /*
 	Theme Name: Harris Guitar Foundation
@@ -127,9 +134,7 @@ ul, ol {
   padding: 14px 16px;
   width: auto;
   float: left;
-  color: #fff;
   margin-top: 4px;
-  text-transform: uppercase;
   border-bottom: 6px solid #e33b0d;
   min-height: 30px; }
   .button:hover, .wpcf7-submit:hover {
@@ -204,16 +209,16 @@ header nav {
       margin-bottom: 20px; }
 
 .row {
-  padding: 60px 20px; }
+  padding: 60px 30px; }
   .row:first-of-type {
     padding-top: 0px; }
   .row.breadcrumbs {
     padding: 5px;
-    margin: 0 15px 0 15px; }
+    margin: 0 30px; }
 
 .row.tan-background {
   background-color: #fdfcef;
-  padding: 40px 60px; }
+  padding: 40px 30px; }
 
 article {
   margin: 30px 0px 20px 0;
@@ -271,9 +276,12 @@ div img.homepage-hero {
 
 /* footer */
 .footer {
+  width: 100%;
   border-top: 10px solid #871719;
-  padding: 60px 40px;
-  clear: both; }
+  margin-top: 40px;
+  padding: 60px 30px;
+  clear: both;
+  display: inline-block; }
 
 #mc_signup_form {
   width: 100%;
