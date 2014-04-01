@@ -1,5 +1,6 @@
 callColorbox = function(){
 	$('.colorbox').colorbox();
+	$('.youtube').colorbox({iframe:true, innerWidth:640, innerHeight:390});
 }
 
 addPatternAfterTan = function(){
