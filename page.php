@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 	
+	<?php get_sidebar(); ?>
+	
 	<!-- section -->
 	<section role="main" class="main">
 		<?php while ( have_posts() ) : the_post(); ?> 
@@ -20,7 +22,9 @@
 			<?php endwhile; ?>
 		<?php endwhile; ?>
 	</section>
-	<?php get_sidebar(); ?>
+	
 	<!-- /section -->
+
+	
 
 <?php get_footer(); ?>

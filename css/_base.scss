@@ -137,7 +137,7 @@ header nav {
 	padding: 20px 0 0 0;
 	width: 70%;
 	min-height: 520px;
-	float: left;
+	float: right;
 	img {
 		&.full-width {
 			width: 100%;
@@ -151,19 +151,22 @@ header nav {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-
-
 }
 
 .sidebar {
 	width: 30%;
 	margin: 0px;
-	padding: 40px 20px 20px 20px;
-	float: right;
+	padding: 40px 20px 20px 30px;
+	float: left;
 	// background-color: #fffcd9;
 	ul {
 		list-style-type: none;
 		padding: 0;
+		li {
+			border-top: 1px solid $grey;
+
+			padding: 15px 0;
+		}
 	}
 	p {
 		margin: 0px;
@@ -182,6 +185,17 @@ header nav {
 		padding: 5px;
 		margin: 0 30px;
 		// background-color: #fdfcef;
+	}
+}
+
+.page-template-default {
+	.main {
+		.row {
+			padding: 60px 20px;
+		}
+		.row:first-of-type {
+			padding: 30px 20px 60px 20px;
+		}
 	}
 }
 
