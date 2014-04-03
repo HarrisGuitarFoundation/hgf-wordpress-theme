@@ -47,7 +47,9 @@
 						</a>
 					</div>
 					<!-- /logo -->
-					
+					<div class="menu-toggle button">
+						Menu
+					</div>
 					<!-- nav -->
 					<nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>

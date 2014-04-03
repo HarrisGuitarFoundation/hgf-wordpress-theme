@@ -7,6 +7,12 @@ addPatternAfterTan = function(){
 	$('.collection-content .ezcol-two-third p:last-of-type').after('<span class="single-close-up">Click on images for close up.</span>');
 }
 
+menuToggle = function(){
+	$('.menu-toggle').click(function(){
+		$('.header nav').slideToggle();
+	});
+}
+
 
 // DOM Ready
 $(function() {
@@ -29,6 +35,7 @@ $(function() {
 	{
 	    callColorbox();
 	    addPatternAfterTan();
+	    menuToggle();
 	});
 
 });

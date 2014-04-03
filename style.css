@@ -172,13 +172,16 @@ a.button, a.wpcf7-submit {
   width: 300px; }
 
 /* nav */
-header nav {
+.header nav {
   padding-top: 10px;
   padding-right: 60px;
   float: right; }
-  header nav li {
+  .header nav li {
     float: left;
     padding-right: 20px; }
+
+.menu-toggle {
+  display: none; }
 
 .main {
   background-color: white;
@@ -453,36 +456,56 @@ a img.aligncenter {
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
-@media only screen and (max-width: 975px) {
-  nav {
-    text-align: center;
-    float: none;
-    top: 40px;
-    right: 0px; }
-    nav li {
-      float: left; } }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .header {
+    padding: 40px 20px 20px 30px; }
+    .header nav {
+      margin: 0 auto;
+      padding-right: 0px;
+      font-size: 18px; }
+      .header nav li:last-of-type {
+        padding-right: 0px; } }
+@media only screen and (max-width: 818px) {
   .header {
     height: auto;
-    background-color: #871719; }
+    background-color: #871719;
+    text-align: center; }
+    .header nav {
+      display: none;
+      width: 100%;
+      background-color: #871719;
+      text-align: center;
+      position: static;
+      float: none;
+      padding: 10px 0 0 0; }
+      .header nav ul {
+        margin: 10px; }
+      .header nav li {
+        float: none;
+        padding: 10px 0 10px 0;
+        border-top: 1px solid #fdfcef; }
+        .header nav li a {
+          border: none; }
+        .header nav li:hover {
+          background-color: #fdfcef; }
+          .header nav li:hover a {
+            color: black; }
+    .header .menu-toggle {
+      text-align: center;
+      float: none;
+      border: 1px solid #e33b0d;
+      display: block;
+      width: 50%;
+      margin: 30px auto 10px auto;
+      color: #fff; }
+      .header .menu-toggle:hover {
+        cursor: pointer; }
 
   .logo {
     margin: 0 auto;
     display: block;
     float: none;
     text-align: center; }
-
-  nav {
-    width: 100%;
-    background-color: #871719;
-    text-align: center;
-    position: static;
-    float: none;
-    padding: 10px 0 0 0; }
-    nav ul {
-      margin: 10px; }
-    nav li {
-      float: none; }
 
   .main {
     width: 100%; }
