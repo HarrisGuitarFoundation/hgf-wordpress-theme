@@ -466,10 +466,14 @@ a img.aligncenter {
       .header nav li:last-of-type {
         padding-right: 0px; } }
 @media only screen and (max-width: 818px) {
+  .wrapper {
+    margin: 0px auto; }
+
   .header {
     height: auto;
     background-color: #871719;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
     .header nav {
       display: none;
       width: 100%;
@@ -501,6 +505,12 @@ a img.aligncenter {
       .header .menu-toggle:hover {
         cursor: pointer; }
 
+  .button, .wpcf7-submit {
+    float: none;
+    display: block;
+    margin: 30px auto;
+    text-align: center; }
+
   .logo {
     margin: 0 auto;
     display: block;
@@ -513,9 +523,35 @@ a img.aligncenter {
   .row {
     display: inline-block;
     width: 100%; }
+    .row div.wp-caption {
+      margin: 0px;
+      display: block;
+      text-align: center;
+      max-width: 100%; }
+      .row div.wp-caption.alignright {
+        float: none; }
 
   .sidebar {
     float: none;
     display: block;
     width: 100%;
-    clear: both; } }
+    clear: both;
+    text-align: center; }
+
+  .row.breadcrumbs {
+    display: none;
+    margin: 10px; }
+
+  h1, h2, h3, h4, h5 {
+    text-align: center; }
+
+  .row .ezcol-one-quarter,
+  .row .ezcol-one-half,
+  .row .ezcol-three-quarter,
+  .row .ezcol-one-third,
+  .row .ezcol-two-third,
+  .row .ezcol-one-fifth,
+  .row .ezcol-two-fifth,
+  .row .ezcol-three-fifth,
+  .row .ezcol-four-fifth {
+    width: 100% !important; } }
