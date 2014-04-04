@@ -554,4 +554,12 @@ a img.aligncenter {
   .row .ezcol-two-fifth,
   .row .ezcol-three-fifth,
   .row .ezcol-four-fifth {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .collection-grid-item {
+    float: left;
+    width: 47%; } }
+@media only screen and (max-width: 480px) {
+  .collection-grid-item {
+    float: none;
+    width: 97%; } }
