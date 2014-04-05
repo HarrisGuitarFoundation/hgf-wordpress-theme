@@ -65,6 +65,11 @@ nav {
   border-bottom: 1px solid #fffed0;
   color: #fffed0; }
 
+.sidebar .current-menu-item a {
+  color: #e33b0d; }
+.sidebar .current-menu-item ul li a {
+  color: #871719; }
+
 /*
 	Theme Name: Harris Guitar Foundation
 	Theme URI: http://html5blank.com
@@ -208,7 +213,23 @@ a.button, a.wpcf7-submit {
     padding: 0; }
     .sidebar ul li {
       border-top: 1px solid #e2dfd5;
-      padding: 15px 0; }
+      padding: 15px 0;
+      font-size: 1.1em; }
+      .sidebar ul li ul {
+        margin: 0; }
+        .sidebar ul li ul li {
+          margin: 0 0 0 0;
+          padding: 10px 0 0 0;
+          border-top: 0px;
+          font-size: .9em; }
+          .sidebar ul li ul li:before {
+            content: '';
+            width: 1.2em;
+            height: 1.2em;
+            position: relative;
+            top: .4em;
+            display: inline-block;
+            background: url("img/triangle-bullet.png") transparent no-repeat; }
   .sidebar p {
     margin: 0px; }
     .sidebar p.post-meta-event_date {
@@ -536,7 +557,7 @@ a img.aligncenter {
     display: block;
     width: 100%;
     clear: both;
-    text-align: center; }
+    text-align: left; }
 
   .row.breadcrumbs {
     display: none;

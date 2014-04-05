@@ -168,8 +168,26 @@ a.button {
 		padding: 0;
 		li {
 			border-top: 1px solid $grey;
-
 			padding: 15px 0;
+			font-size: 1.1em;
+			ul {
+				margin: 0;
+				li {
+					margin: 0 0 0 0;
+					padding: 10px 0 0 0;
+					border-top: 0px;
+					font-size: .9em;
+					&:before {
+						content: '';
+						width: 1.2em;
+						height: 1.2em;
+						position: relative;
+						top: .4em;
+						display: inline-block;
+						background: url("img/triangle-bullet.png") transparent no-repeat;
+					}
+				}
+			}
 		}
 	}
 	p {

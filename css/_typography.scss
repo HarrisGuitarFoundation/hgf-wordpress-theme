@@ -104,3 +104,14 @@ nav {
 	color: #fffed0;
 }
 
+.sidebar {
+	.current-menu-item {
+		a {
+			color: $lightRed;
+		}
+		ul li a {
+			color: $red;
+		}
+	}
+}
+
