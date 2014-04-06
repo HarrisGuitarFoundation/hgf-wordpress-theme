@@ -17,15 +17,17 @@
 		 }
 		 ?>
 		<!-- /post thumbnail -->
-		
-		<!-- post title -->
-		<h2>
-			<?php the_title(); ?>
-		</h2>
-		<!-- /post title -->
-		
-		<?php the_content(); ?>
-		
+
+		<div class="event-date">
+			<?php echo get_post_meta($post->ID, 'event-date', true); ?>
+		</div>
+		<div class="event-body">
+			<h2>
+				<?php the_title(); ?>
+			</h2>		
+			<strong>Location:</strong> <?php echo get_post_meta($post->ID, 'event-location', true); ?>
+			<?php the_content(); ?>
+		</div>
 	</article>
 	<!-- /article -->
 	
