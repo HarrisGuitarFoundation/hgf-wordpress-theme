@@ -67,9 +67,17 @@ nav {
   color: #fffed0; }
 
 .sidebar .current-menu-item a {
-  color: #e33b0d; }
+  color: #f6dac8; }
 .sidebar .current-menu-item ul li a {
   color: #871719; }
+
+footer {
+  color: black; }
+  footer a, footer .current-menu-item a {
+    border-bottom: 0px;
+    color: black; }
+    footer a:hover, footer .current-menu-item a:hover {
+      color: black; }
 
 /*
 	Theme Name: Harris Guitar Foundation
@@ -261,7 +269,7 @@ article {
   margin-right: 20px;
   margin-bottom: 20px; }
 
-.collection-grid-item {
+.grid-item {
   float: left;
   width: 30%;
   text-align: center;
@@ -323,12 +331,27 @@ div img.homepage-hero {
 
 /* footer */
 .footer {
+  background-color: #f6dac8;
   width: 100%;
-  border-top: 10px solid #871719;
+  border-top: 6px solid #871719;
   margin-top: 40px;
   padding: 60px 30px;
   clear: both;
   display: inline-block; }
+  .footer p {
+    float: left;
+    padding-top: 0px;
+    margin-top: 0px; }
+
+#menu-footer-menu {
+  margin: 0 auto;
+  display: inline-block;
+  float: right; }
+  #menu-footer-menu li {
+    float: left;
+    padding-right: 20px; }
+    #menu-footer-menu li:last-of-type {
+      padding-right: 0px; }
 
 #mc_signup_form {
   width: 100%;
@@ -407,7 +430,7 @@ a img.aligncenter {
   margin-right: auto; }
 
 .wp-caption {
-  max-width: 96%;
+  max-width: 100%;
   padding: 5px 3px 10px;
   text-align: center; }
 
@@ -424,7 +447,6 @@ a img.aligncenter {
   border: 0 none;
   height: auto;
   margin: 0;
-  max-width: 98.5%;
   padding: 0;
   width: auto; }
 
@@ -533,7 +555,7 @@ a img.aligncenter {
     .header .menu-toggle {
       text-align: center;
       float: none;
-      border: 1px solid #e33b0d;
+      border: 1px solid #f6dac8;
       display: block;
       width: 50%;
       margin: 30px auto 10px auto;
@@ -592,7 +614,7 @@ a img.aligncenter {
   .row .ezcol-four-fifth {
     width: 100% !important; }
 
-  .collection-grid-item {
+  .grid-item {
     float: left;
     width: 47%; }
 
@@ -607,6 +629,6 @@ a img.aligncenter {
   .event-body {
     padding: 20px 0 20px 0; } }
 @media only screen and (max-width: 480px) {
-  .collection-grid-item {
+  .grid-item {
     float: none;
     width: 97%; } }

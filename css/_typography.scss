@@ -116,3 +116,14 @@ nav {
 	}
 }
 
+footer {
+	color: $black;
+	a, .current-menu-item a {
+		border-bottom: 0px;
+		color: $black;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+

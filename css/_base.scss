@@ -237,7 +237,7 @@ article {
 	margin-bottom: 20px;
 }
 
-.collection-grid-item {
+.grid-item {
 	float: left;
 	width: 30%;
 	text-align: center;
@@ -319,12 +319,31 @@ div img.homepage-hero {
 
 /* footer */
 .footer {
+	background-color: $lightRed;
 	width: 100%;
-	border-top: 10px solid #871719;
+	border-top: 6px solid #871719;
 	margin-top: 40px;
 	padding: 60px 30px;
 	clear: both;
 	display: inline-block;
+	p {
+		float: left;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+}
+
+#menu-footer-menu {
+	margin: 0 auto;
+	display: inline-block;
+	float: right;
+	li {
+		float: left;
+		padding-right: 20px;
+		&:last-of-type {
+			padding-right: 0px;
+		}
+	}
 }
 
 // forms
@@ -426,7 +445,7 @@ a img.aligncenter {
 	margin-right:auto;
 }
 .wp-caption {
-	max-width:96%;
+	max-width:100%;
 	padding:5px 3px 10px;
 	text-align:center;
 }
@@ -443,7 +462,6 @@ a img.aligncenter {
 	border:0 none;
 	height:auto;
 	margin:0;
-	max-width:98.5%;
 	padding:0;
 	width:auto;
 }

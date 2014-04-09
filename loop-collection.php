@@ -4,7 +4,7 @@
 <?php query_posts("cat=4&meta_key=guitar-year&orderby=guitar-year&order=ASC"); ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-		<span class="collection-grid-item">
+		<span class="grid-item">
 		<!-- post thumbnail -->
 			<p>
 				<?php if ( has_post_thumbnail()) : ?>
