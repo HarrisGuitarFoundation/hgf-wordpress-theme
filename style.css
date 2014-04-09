@@ -14,11 +14,12 @@ h1 {
   margin-top: 0; }
 
 a {
-  color: #871719;
-  text-decoration: none; }
+  color: #871719; }
   a:hover {
-    text-decoration: underline;
     color: #474741; }
+
+nav a, .breadcrumbs a {
+  text-decoration: none; }
 
 .page-id-143 p:first-of-type {
   font-size: 1em; }
@@ -54,8 +55,8 @@ nav {
     nav a:hover {
       text-decoration: none;
       padding-bottom: 6px;
-      border-bottom: 3px solid #fffed0;
-      color: #fffed0; }
+      border-bottom: 3px solid #f7e7e7;
+      color: #f7e7e7; }
 
 .single-close-up {
   color: #f00; }
@@ -63,11 +64,11 @@ nav {
 .current-menu-item a {
   text-decoration: none;
   padding-bottom: 6px;
-  border-bottom: 1px solid #fffed0;
-  color: #fffed0; }
+  border-bottom: 1px solid #f7e7e7;
+  color: #f7e7e7; }
 
 .sidebar .current-menu-item a {
-  color: #f6dac8; }
+  color: #f7e7e7; }
 .sidebar .current-menu-item ul li a {
   color: #871719; }
 
@@ -326,12 +327,15 @@ div img.homepage-hero {
   width: 240px;
   padding-top: 20px; }
 
+.category-collection .grid-item {
+  min-height: 570px; }
+
 .event-body {
   padding: 20px 0 20px 240px; }
 
 /* footer */
 .footer {
-  background-color: #f6dac8;
+  background-color: #f7e7e7;
   width: 100%;
   border-top: 6px solid #871719;
   margin-top: 40px;
@@ -549,19 +553,21 @@ a img.aligncenter {
         .header nav li a {
           border: none; }
         .header nav li:hover {
-          background-color: #fdfcef; }
+          background-color: #f7e7e7; }
           .header nav li:hover a {
             color: black; }
     .header .menu-toggle {
       text-align: center;
       float: none;
-      border: 1px solid #f6dac8;
+      border-bottom: 3px solid #f7e7e7;
       display: block;
       width: 50%;
       margin: 30px auto 10px auto;
       color: #fff; }
       .header .menu-toggle:hover {
-        cursor: pointer; }
+        background-color: #f7e7e7;
+        cursor: pointer;
+        color: black; }
 
   .button, .wpcf7-submit {
     float: none;

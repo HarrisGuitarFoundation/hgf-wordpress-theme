@@ -23,11 +23,15 @@ h1 {
 
 a {
 	color: $red;
-	text-decoration:none;
+	// text-decoration:none;
 	&:hover {
-		text-decoration: underline;
+		// text-decoration: underline;
 		color: #474741;
 	}
+}
+
+nav a, .breadcrumbs a {
+	text-decoration: none;
 }
 
 
@@ -88,8 +92,8 @@ nav {
 		&:hover {
 			text-decoration: none;
 			padding-bottom: 6px;
-			border-bottom: 3px solid #fffed0;
-			color: #fffed0;
+			border-bottom: 3px solid $lightRed;
+			color: $lightRed;
 		}
 	}	
 }
@@ -101,8 +105,8 @@ nav {
 .current-menu-item a {
 	text-decoration: none;
 	padding-bottom: 6px;
-	border-bottom: 1px solid #fffed0;
-	color: #fffed0;
+	border-bottom: 1px solid $lightRed;
+	color: $lightRed;
 }
 
 .sidebar {

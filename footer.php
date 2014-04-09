@@ -1,7 +1,7 @@
 			<!-- footer -->
 
 			<footer class="footer" role="contentinfo">
-					<p> <strong>© Harris Guitar Foundation 2014</strong><br />
+					<p> <strong>Harris Guitar Foundation, © 2014</strong><br />
 						1563 Solano Ave. #201, Berkeley, Ca 94707<br />
 						harrisguitar@gmail.com
 					</p>

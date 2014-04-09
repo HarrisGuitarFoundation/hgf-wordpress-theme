@@ -48,7 +48,7 @@
 					border: none;
 				}
 				&:hover {
-					background-color: $lightTan;
+					background-color: $lightRed;
 					a {
 						color: $black;
 					}
@@ -58,13 +58,15 @@
 		.menu-toggle {
 			text-align: center;
 			float: none;
-			border: 1px solid $lightRed;
+			border-bottom: 3px solid $lightRed;
 			display: block;
 			width: 50%;
 			margin: 30px auto 10px auto;
 			color: #fff;
 			&:hover {
+				background-color: $lightRed;
 				cursor: pointer;
+				color: $black;
 			}
 		}
 

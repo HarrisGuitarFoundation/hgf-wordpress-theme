@@ -312,6 +312,12 @@ div img.homepage-hero {
 	padding-top: 20px;
 }
 
+.category-collection {
+	.grid-item {
+		min-height: 570px;
+	}
+}
+
 .event-body {
 	padding: 20px 0 20px 240px;
 }
