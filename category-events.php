@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php query_posts("cat=3"); ?>
 	
 	<!-- section -->
 	<section role="main" class="main no-sidebar">
