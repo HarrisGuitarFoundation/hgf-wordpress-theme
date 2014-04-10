@@ -207,6 +207,9 @@ a.button {
 		margin: 0 30px;
 		// background-color: #fdfcef;
 	}
+	.tan-background:last-of-type {
+		padding-bottom: 0px;
+	}
 }
 
 .page-template-default {
@@ -220,9 +223,27 @@ a.button {
 	}
 }
 
-.row.tan-background {
+.tan-background {
 	background-color: $lightTan;
 	padding: 40px 30px;
+	.wp-caption .wp-caption-text,
+	.gallery-caption {
+		// font-size:11px;
+		// line-height:17px;
+		background: none;
+		margin: 20px 0 0 0;
+		padding: 5px 0;
+	}
+	.button {
+		background-color: $tan;
+		color: $black;
+		border-bottom: 6px solid $darkTan;
+		&:hover {
+			background-color: $darkTan;
+			color: $white;
+			border-bottom: 6px solid $tan;
+		}
+	}
 }
 
 article {
@@ -325,10 +346,10 @@ div img.homepage-hero {
 
 /* footer */
 .footer {
-	background-color: $lightRed;
+	background-color: $tan;
 	width: 100%;
-	border-top: 6px solid #871719;
-	margin-top: 40px;
+	border-top: 6px solid $darkTan;
+	// margin-top: 40px;
 	padding: 60px 30px;
 	clear: both;
 	display: inline-block;
@@ -359,13 +380,6 @@ div img.homepage-hero {
 	background-color: #fdfcef;
 	padding: 10px;
 	display: inline-block;
-	.mc_var_label {
-		padding: 0px;
-		margin: 0px;
-	}
-	#mc_signup_submit {
-		width: 100%;
-	}
 }
 
 
@@ -382,10 +396,22 @@ input {
 }
 
 
+// .wpcf7-submit {
+// 	@extend .button;
+// }
 
+.mc_signup_submit {
+	.button {
+		min-height: 50px;
+		// border: 10px solid #000;
+	}
+}
 
-.wpcf7-submit {
-	@extend .button;
+#mc_signup {
+	font-size: .9em;
+	input {
+		font-size: 1.2em;
+	}
 }
 
 
@@ -480,16 +506,6 @@ a img.aligncenter {
 	padding: 6px;
 }
 
-.tan-background {
-	.wp-caption .wp-caption-text,
-	.gallery-caption {
-		// font-size:11px;
-		// line-height:17px;
-		background: none;
-		margin: 20px 0 0 0;
-		padding: 5px 0;
-	}
-}
 
 .sticky {
 	
