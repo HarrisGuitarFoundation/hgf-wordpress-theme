@@ -29,10 +29,10 @@
 				</div>
 			<?php endif; ?>
 		<?php endwhile; ?>
-		<nav class="single-post-nav">
+		<!-- <nav class="single-post-nav">
 			<span class="previous-link"><?php previous_post_link('<span class="previous-link-title">Previous Guitar</span>%link', '%title', true); ?> </span>
 			<span class="next-link"><?php next_post_link('<span class="next-link-title">Next Guitar</span>%link', '%title', true); ?> </span>
-		</nav>
+		</nav> -->
 
 	</section>
 	<!-- /section -->

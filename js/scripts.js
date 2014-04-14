@@ -31,7 +31,7 @@ $(function() {
 
 	
 
-	$.getScript('wp-content/themes/hgf-wordpress-theme/js/jquery.colorbox-min.js', function()
+	$.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js', function()
 	{
 	    callColorbox();
 	    addPatternAfterTan();
