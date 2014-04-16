@@ -110,9 +110,16 @@ nav {
 }
 
 .sidebar {
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 	.current-menu-item {
 		a {
-			color: $lightRed;
+			color: $darkGrey;
+			border-bottom: 0px;
 		}
 		ul li a {
 			color: $red;

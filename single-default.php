@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<!-- section -->
-	<section role="main" class="main">
+	<section role="main" class="main no-sidebar">
 	
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	
