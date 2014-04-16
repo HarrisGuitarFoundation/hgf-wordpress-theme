@@ -543,7 +543,7 @@ a img.aligncenter {
       font-size: 18px; }
       .header nav li:last-of-type {
         padding-right: 0px; } }
-@media only screen and (max-width: 818px) {
+@media only screen and (max-width: 850px) {
   .wrapper {
     margin: 0px auto; }
 
