@@ -68,16 +68,16 @@ ul, ol {
 }
 
 .button {
-  background-color: #871719;
+  background-color: $red;
   border: 0px;
   padding: 14px 16px;
   width: auto;
   float: left;
   margin-top:4px;
-  border-bottom: 6px solid #e33b0d;
+  border-bottom: 6px solid $redAccent;
   min-height: 30px;
   &:hover {
-  	background-color: #e33b0d;
+  	background-color: $redAccent;
   	color: #000;
   }
 }
@@ -235,13 +235,13 @@ a.button {
 		padding: 5px 0;
 	}
 	.button {
-		background-color: $tan;
-		color: $black;
-		border-bottom: 6px solid $darkTan;
+		// background-color: $tan;
+		// color: $black;
+		// border-bottom: 6px solid $darkTan;
 		&:hover {
-			background-color: $darkTan;
-			color: $white;
-			border-bottom: 6px solid $tan;
+			// background-color: $darkTan;
+			// color: $white;
+			// border-bottom: 6px solid $tan;
 		}
 	}
 }
@@ -346,10 +346,8 @@ div img.homepage-hero {
 
 /* footer */
 .footer {
-	background-color: $tan;
 	width: 100%;
-	border-top: 6px solid $darkTan;
-	// margin-top: 40px;
+	border-top: 6px solid $red;
 	padding: 60px 30px;
 	clear: both;
 	display: inline-block;

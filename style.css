@@ -155,10 +155,10 @@ ul, ol {
   width: auto;
   float: left;
   margin-top: 4px;
-  border-bottom: 6px solid #e33b0d;
+  border-bottom: 6px solid #5f1719;
   min-height: 30px; }
   .button:hover {
-    background-color: #e33b0d;
+    background-color: #5f1719;
     color: #000; }
 
 a.button {
@@ -272,14 +272,6 @@ a.button {
     background: none;
     margin: 20px 0 0 0;
     padding: 5px 0; }
-  .tan-background .button {
-    background-color: #f0e6c6;
-    color: black;
-    border-bottom: 6px solid #6a3e1a; }
-    .tan-background .button:hover {
-      background-color: #6a3e1a;
-      color: white;
-      border-bottom: 6px solid #f0e6c6; }
 
 article {
   margin: 30px 0px 20px 0;
@@ -355,9 +347,8 @@ div img.homepage-hero {
 
 /* footer */
 .footer {
-  background-color: #f0e6c6;
   width: 100%;
-  border-top: 6px solid #6a3e1a;
+  border-top: 6px solid #871719;
   padding: 60px 30px;
   clear: both;
   display: inline-block; }
