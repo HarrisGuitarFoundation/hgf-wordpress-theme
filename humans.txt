@@ -1,0 +1,21 @@
+
+                            
+/* TEAM */
+
+                            
+Lead Developer/Designer: Alex Harris,                     
+Site: internetstudio.biz                         
+Twitter: @heyinternetstudio                         
+Location: Oakland, CA, USA
+
+Content: John Harris
+Site: ljohnharris.com
+Location: Berkeley, CA, USA
+                    
+                            
+/* SITE */
+          
+                            
+Standards: HTML5, CSS3, SASS, Javascript                       
+Components: jQuery, jQuery Colorbox, etc.                          
+Software: Sublime Text, Wordpress, Photoshop
