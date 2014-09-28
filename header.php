@@ -4,6 +4,8 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 		
+		<link rel="author" href="humans.txt" />
+		
 		<!-- dns prefetch -->
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
 		

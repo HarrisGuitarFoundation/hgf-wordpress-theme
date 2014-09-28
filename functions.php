@@ -197,6 +197,17 @@ if (function_exists('register_sidebar'))
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+
+    // Define Sidebar for Blog
+    register_sidebar(array(
+        'name' => __('Blog Sidebar', 'html5blank'),
+        'description' => __('Sidebar for blog', 'html5blank'),
+        'id' => 'blog-sidebar',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 }
 
 // Remove wp_head() injected Recent Comment styles
